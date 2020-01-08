@@ -4,6 +4,8 @@ REACT - QUICK NOTES
 
 * It allows us to User Interfaces to be complied through components
 
+* The syntax used in React is JSX which structurally is easier to understand and read
+
 * Components allows data entered in React to visually render to our screen.
 
 * In the event, that any data changes, React will update and re-render the components accordingly
@@ -12,5 +14,33 @@ REACT - QUICK NOTES
 
 * They are nested within a render method and returned to display on screen.
 
-* The syntax used in React is JSX which structurally is easier to understand and read
+* Whilst passing in props, it allows control of information flow in parent and child components
 
+* Components also can have a state (an object) which is bound by its component.
+
+* Often state is used with the keyword this i.e. this.state followed by object key value pairs 
+
+* They are nested within a constructor() method and with a props to be accessed within render elements.
+
+FOR EXAMPLE: 
+
+class Square extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      value: null,
+    };
+  }
+
+  render() {
+    return (
+      <button className="square" onClick={() => alert('click')}>
+        {this.props.value}
+      </button>
+    );
+  }
+}
+
+* super will always be used in defining the constructor as it refers to the parent class constructor
+
+* If not included then you won't be able to use the this. to create object nor access within the rest of the code 
