@@ -1,0 +1,16 @@
+REACT - QUICK NOTES
+
+* React is a Javascript library used for building user interfaces such as todo list applications
+
+* It allows us to User Interfaces to be complied through components
+
+* Components allows data entered in React to visually render to our screen.
+
+* In the event, that any data changes, React will update and re-render the components accordingly
+
+* Within a component, props short for properties are entered as data which looks like HTML elements
+
+* They are nested within a render method and returned to display on screen.
+
+* The syntax used in React is JSX which structurally is easier to understand and read
+
